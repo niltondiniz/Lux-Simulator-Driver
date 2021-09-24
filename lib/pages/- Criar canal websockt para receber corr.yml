@@ -1,0 +1,22 @@
+- Criar canal websockt para receber corridas
+- Alterar layout, o novo layout deve conter:
+    - Manter latitude e longitude - OK
+    - Alterar label de latitude e longitude para atual ao inves de origem - OK
+    - Criar botão para aceitar corrida - OK
+    - Criar botão para recusar corrida - OK
+    - Criar botão para chegar no passageiro - OK
+    - Criar botão para iniciar corrida - OK
+    - Criar botão para cancelar corrida - OK
+    - Criar botão para finalizar corrida - OK
+    - Criar botão para enviar posicao - OK
+    - Criar Chat - DEPOIS
+    - Criar timer para aceite da corrida
+    - Criar metodo para recusar corrida (Via websocket)
+    - Criar Free Route
+
+
+    3042
+
+    driver-answer
+    TRIPID
+    DRIVERANSWER

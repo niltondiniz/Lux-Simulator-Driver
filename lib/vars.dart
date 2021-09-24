@@ -1,0 +1,26 @@
+import 'package:dio/dio.dart';
+import 'package:flutter/material.dart';
+import 'package:socket_io_client/socket_io_client.dart';
+
+final TextEditingController lat = TextEditingController();
+final TextEditingController lon = TextEditingController();
+final TextEditingController driverName = TextEditingController();
+final TextEditingController passengerPhone = TextEditingController();
+final TextEditingController estimatedPrice = TextEditingController();
+final TextEditingController driverId = TextEditingController();
+final Dio dio = Dio(BaseOptions(baseUrl: 'http://stage.applux.com.br:3000'));
+String? distancia;
+String? duracao;
+String? valorEstimado;
+String? status;
+bool isLoading = false;
+Map<String, dynamic>? data = {};
+String? recibo;
+String? motorista;
+String? passageiro;
+String? valorGanho;
+String? telefonePassageiro;
+bool incomingTrip = false;
+bool acceptedTrip = false;
+late Socket channelAwaitingTrip;
+late Socket channelTrip;
